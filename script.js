@@ -1,4 +1,4 @@
-const API_KEY = CONFIG.API_KEY;
+const API_KEY = typeof CONFIG !== "undefined" ? CONFIG.API_KEY : "demo-key-or-placeholder";
 
 const dropList = document.querySelectorAll(".drop-list select"),
     fromCurrency = document.querySelector(".from select"),
